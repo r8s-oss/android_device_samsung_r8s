@@ -1078,6 +1078,7 @@ on fs
     chown system system /sys/class/mdnie/mdnie/bypass
     chown system system /sys/class/mdnie/mdnie/mdnie_ldu
     chown system system /sys/class/mdnie/mdnie/hdr
+    chown system system /sys/class/mdnie/mdnie/lux
 
 # Diag-daemon
     mkdir /efs/cpdebug 0771 radio system
