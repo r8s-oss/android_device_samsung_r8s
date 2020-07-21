@@ -186,6 +186,8 @@ PRODUCT_COPY_FILES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    device/samsung/r8s/overlay/hardware/samsung/AdvancedDisplay
 
 PRODUCT_PACKAGES += \
     NoCutoutOverlay \
