@@ -64,6 +64,9 @@ function blob_fixup() {
             xxd -r -p "${2}".hex > "${2}"
             rm "${2}".hex
             ;;
+        vendor/lib*/libsensorlistener.so)
+            "${PATCHELF}" --add-needed libshim_sensorndkbridge.so "${2}"
+            ;;
     esac
 }
 

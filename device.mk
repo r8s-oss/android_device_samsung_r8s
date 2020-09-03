@@ -60,7 +60,8 @@ TARGET_BOOTANIMATION_HALF_RES := true
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-service_64.exynos990 \
-    libsensorndkbridge
+    libsensorndkbridge \
+    libshim_sensorndkbridge
 
 # Display
 PRODUCT_PACKAGES += \
