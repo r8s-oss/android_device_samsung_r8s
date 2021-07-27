@@ -7,6 +7,9 @@
 ## Device Path
 DEVICE_PATH := device/samsung/r8s
 
+## Include Path
+TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
+
 # Arch
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
