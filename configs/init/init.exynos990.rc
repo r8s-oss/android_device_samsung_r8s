@@ -106,6 +106,9 @@ on init
     chown system system /sys/kernel/ems/emstune/req_mode
     chmod 0664 /sys/kernel/ems/emstune/req_mode
 
+# Setup cpu.shares to throttle background group at 15%
+    write /dev/cpuctl/background/cpu.shares 4096
+
 # EPIC interfaces
     chmod 660 /dev/stune/top-app/schedtune.boost
     chown system system /sys/kernel/ems/global_boost
