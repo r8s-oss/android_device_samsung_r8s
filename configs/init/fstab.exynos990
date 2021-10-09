@@ -13,5 +13,5 @@ odm                                            /odm                 ext4    ro,e
 /dev/block/by-name/misc                        /misc                emmc    defaults                                                                                     defaults
 /dev/block/by-name/metadata                    /metadata            ext4    noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic,sync wait,first_stage_mount,formattable,check
 
-/devices/platform/132e0000.dwmmc2/mmc_host*    auto    auto    default    voldmanaged=sdcard:auto
+/devices/platform/132e0000.dwmmc2/mmc_host*    auto    auto    default    voldmanaged=sdcard:auto,encryptable=userdata
 /devices/platform/10e00000.usb*                auto    vfat    default    voldmanaged=usb:auto
