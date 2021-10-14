@@ -38,6 +38,9 @@
         control the display in this mode. -->
     <bool name="doze_suspend_display_state_supported">true</bool>
 
+    <!-- Color of the FOD view -->
+    <color name="config_fodColor">#00ffffff</color>
+
     <!-- the padding on the end of the statusbar -->
     <dimen name="status_bar_padding_start">16dp</dimen>
 

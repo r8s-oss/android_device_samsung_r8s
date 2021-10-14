@@ -100,7 +100,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.samsung
+    android.hardware.biometrics.fingerprint@2.3-service.samsung
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -131,7 +131,8 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/init/init.exynos990.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.exynos990.usb.rc \
     $(DEVICE_PATH)/configs/init/init.recovery.exynos990.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.exynos990.rc \
     $(DEVICE_PATH)/configs/init/init.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.samsung.rc \
-    $(DEVICE_PATH)/configs/init/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc
+    $(DEVICE_PATH)/configs/init/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
+    $(DEVICE_PATH)/configs/init/init.udfps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.udfps.rc
 
 # Keylayout
 PRODUCT_COPY_FILES += \

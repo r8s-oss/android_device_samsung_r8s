@@ -1019,6 +1019,7 @@ on fs
     chown system system /sys/class/lcd/panel/vrr
     chown system system /sys/class/lcd/panel/mask_brightness
     chown system system /sys/class/lcd/panel/actual_mask_brightness
+    chown system system /sys/class/lcd/panel/hbm_override
     chown system system /sys/class/lcd/panel/enable_fd
 
 # Permissions for LCD COPR
