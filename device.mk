@@ -28,7 +28,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@5.0-impl:32 \
     android.hardware.audio@5.0-impl:32 \
     android.hardware.audio.service \
-    android.hardware.bluetooth.audio@2.1-impl:32 \
+    android.hardware.bluetooth.audio-impl \
     android.hidl.allocator@1.0.vendor \
     audio.bluetooth.default \
     audio.r_submix.default \
