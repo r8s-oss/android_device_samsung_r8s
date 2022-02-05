@@ -202,6 +202,14 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0.vendor:64 \
+    android.hardware.power-service.samsung-libperfmgr
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # PowerShare
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.samsung
@@ -240,7 +248,11 @@ PRODUCT_PACKAGES += \
     libshim_sensorndkbridge
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+PRODUCT_SOONG_NAMESPACES += \
+    $(DEVICE_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/samsung/aidl/power-libperfmgr
 
 # Thermal
 PRODUCT_PACKAGES += \
