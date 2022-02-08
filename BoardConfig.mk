@@ -82,6 +82,7 @@ TARGET_BOARD_PLATFORM := universal990
 TARGET_SOC := exynos990
 
 # Props
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery

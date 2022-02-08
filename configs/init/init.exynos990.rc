@@ -1177,7 +1177,12 @@ on property:ro.bootmode=charger
     chown system system /efs/usb_hw_param/usb_hw_param.log
     chmod 0660 /efs/usb_hw_param/usb_hw_param.log
     mkdir /efs/lpm 0775 system system
-    class_start sec-charger
+    class_start charger
+
+service charger /system/bin/charger
+    class charger
+    critical
+    seclabel u:r:charger:s0
 
 # on userdebug and eng builds, enable kgdb on the serial console
 on property:ro.debuggable=1
