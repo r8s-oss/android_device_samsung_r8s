@@ -14,3 +14,5 @@ odm                                            /odm                 ext4    ro,e
 
 /devices/platform/132e0000.dwmmc2/mmc_host*    auto    auto    default    voldmanaged=sdcard:auto,encryptable=userdata
 /devices/platform/10e00000.usb*                auto    vfat    default    voldmanaged=usb:auto
+
+/dev/block/zram0               none            swap    defaults zramsize=3221225472,max_comp_streams=8
