@@ -69,6 +69,15 @@ function blob_fixup() {
         vendor/lib*/libsensorlistener.so)
             "${PATCHELF}" --add-needed libshim_sensorndkbridge.so "${2}"
             ;;
+        vendor/etc/media_codecs_performance.xml)
+            sed -i '133,163d' "${2}"
+            ;;
+        vendor/etc/init/init.gps.rc)
+            sed -i '48,62d' "${2}"
+            ;;
+        vendor/etc/init/init.vendor.rilcommon.rc)
+            sed -i '16,18d' "${2}"
+            ;;
     esac
 }
 
