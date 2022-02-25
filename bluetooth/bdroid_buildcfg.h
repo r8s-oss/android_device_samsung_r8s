@@ -25,4 +25,6 @@
 #define BTM_WBS_INCLUDED TRUE       /* Enable WBS */
 #define BTIF_HF_WBS_PREFERRED TRUE  /* Use WBS    */
 
+#define BTM_ESCO_TRANSPORT_UNIT_SIZE_PCM16
+
 #endif
