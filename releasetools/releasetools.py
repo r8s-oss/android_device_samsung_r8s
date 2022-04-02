@@ -1,6 +1,6 @@
 #!/bin/env python3
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -25,16 +25,13 @@ def IncrementalOTA_InstallEnd(info):
   OTA_InstallEnd(info)
   return
 
-def AddImage(info, basename, dest):
-  name = basename
-  data = info.input_zip.read("IMAGES/" + basename)
-  common.ZipWriteStr(info.output_zip, name, data)
-  info.script.AppendExtra('package_extract_file("%s", "%s");' % (name, dest))
-
-def PrintInfo(info, dest):
+def AddImage(info, dir, basename, dest):
+  data = info.input_zip.read(dir + "/" + basename)
+  common.ZipWriteStr(info.output_zip, basename, data)
   info.script.Print("Patching {} image unconditionally...".format(dest.split('/')[-1]))
+  info.script.AppendExtra('package_extract_file("%s", "%s");' % (basename, dest))
 
 def OTA_InstallEnd(info):
-  PrintInfo(info, "/dev/block/by-name/vbmeta")
-  AddImage(info, "vbmeta.img", "/dev/block/by-name/vbmeta")
+  AddImage(info, "IMAGES", "dtbo.img", "/dev/block/by-name/dtbo")
+  AddImage(info, "IMAGES", "vbmeta.img", "/dev/block/by-name/vbmeta")
   return
