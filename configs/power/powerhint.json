@@ -99,7 +99,7 @@
         },
         {
             "Name": "TouchscreenEnable",
-            "Path": "/sys/class/sec/tsp/input/enabled",
+            "Path": "/sys/class/sec/tsp/enabled",
             "Values": [
                 "1",
                 "0"
