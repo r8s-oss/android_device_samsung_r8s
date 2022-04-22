@@ -53,23 +53,19 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
-#function blob_fixup() {
-#    case "${1}" in
-#        vendor/lib/libsample1.so)
-#            sed -i 's|/data/misc/sample1|/data/misc/sample2|g' "${2}"
-#            ;;
-#        vendor/lib64/libsample2.so)
-#            "${PATCHELF}" --remove-needed "libsample3.so" "${2}"
-#            "${PATCHELF}" --add-needed "libsample4.so" "${2}"
-#            ;;
-#        vendor/lib/libsample5.so)
-#            "${PATCHELF}" --replace-needed "libsample6.so" "libsample7.so" "${2}"
-#            ;;
-#        vendor/lib/libsample7.so)
-#            "${PATCHELF}" --set-soname "libsample7.so" "${2}"
-#            ;;
-#    esac
-#}
+function blob_fixup() {
+    case "${1}" in
+        vendor/lib64/libexynoscamera3.so)
+            xxd -p "${2}" | tr -d \\n > "${2}".hex
+            # NOP SecCameraIPCtoRIL::enable m_sendRequest()
+            sed -i "s/140000940a000014/1f2003d50a000014/g" "${2}".hex
+            # NOP SecCameraIPCtoRIL::disable m_sendRequest()
+            sed -i "s/a8ffff970a000014/1f2003d50a000014/g" "${2}".hex
+            xxd -r -p "${2}".hex > "${2}"
+            rm "${2}".hex
+            ;;
+    esac
+}
 
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
