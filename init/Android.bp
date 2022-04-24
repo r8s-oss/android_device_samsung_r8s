@@ -15,9 +15,9 @@
 //
 
 cc_library_static {
-    name: "libinit_x1s",
+    name: "libinit_x1slte",
     recovery_available: true,
-    srcs: ["init_x1s.cpp"],
+    srcs: ["init_x1slte.cpp"],
     header_libs: ["libbase_headers"],
     include_dirs: [
         "device/samsung/exynos990-common/init",

@@ -42,8 +42,8 @@ void vendor_load_properties()
     std::string bootloader = GetProperty("ro.bootloader", "");
 
     if (bootloader.find("G980F") == 0) {
-        property_override("ro.build.description", "x1sxx-user 11 RP1A.200720.012 G980FXXU5CUA3 release-keys");
-        set_ro_build_prop("fingerprint", "samsung/x1sxx/x1s:11/RP1A.200720.012/G980FXXU5CUA3:user/release-keys");
+        property_override("ro.build.description", "x1sltexx-user 11 RP1A.200720.012 G980FXXU5CUA3 release-keys");
+        set_ro_build_prop("fingerprint", "samsung/x1sltexx/x1slte:11/RP1A.200720.012/G980FXXU5CUA3:user/release-keys");
         set_ro_product_prop("model", "SM-G980F");
         set_ro_product_prop("name", "x1sxx");
     }

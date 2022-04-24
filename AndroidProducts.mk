@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_x1s.mk
+    $(LOCAL_DIR)/lineage_x1slte.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_x1s-eng \
-    lineage_x1s-user \
-    lineage_x1s-userdebug
+    lineage_x1slte-eng \
+    lineage_x1slte-user \
+    lineage_x1slte-userdebug

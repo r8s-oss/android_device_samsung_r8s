@@ -29,7 +29,7 @@ fi
 
 set -e
 
-export DEVICE=x1s
+export DEVICE=x1slte
 export DEVICE_COMMON=exynos990-common
 export VENDOR=samsung
 
