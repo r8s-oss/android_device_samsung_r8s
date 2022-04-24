@@ -29,8 +29,5 @@ TARGET_OTA_ASSERT_DEVICE := x1slte
 ## Display
 TARGET_SCREEN_DENSITY := 420
 
-## Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_x1slte
-
 ## Kernel
 TARGET_KERNEL_CONFIG := exynos9830-x1slte_defconfig
