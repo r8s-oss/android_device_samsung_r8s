@@ -9,7 +9,6 @@ odm                                            /odm                 ext4    ro,e
 /dev/block/by-name/cache                       /cache               ext4    noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic      wait,check
 /dev/block/by-name/userdata                    /data                ext4    noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic      wait,check,reservedsize=128M,quota
 /dev/block/by-name/efs                         /mnt/vendor/efs	    ext4    noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic      wait,check
-/dev/block/by-name/cpefs                       /mnt/vendor/cpefs    ext4    noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic      wait,check,nofail
 /dev/block/by-name/misc                        /misc                emmc    defaults                                                                                     defaults
 /dev/block/by-name/metadata                    /metadata            ext4    noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic,sync wait,first_stage_mount,formattable,check
 
