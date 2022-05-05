@@ -10,6 +10,9 @@ DEVICE_PATH := device/samsung/r8s
 ## Include Path
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
+## Vulkan
+TARGET_USES_VULKAN := true
+
 # Arch
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
