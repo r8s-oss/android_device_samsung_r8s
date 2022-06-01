@@ -78,3 +78,8 @@ wifi.direct.interface=p2p-dev-wlan0
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=180
 ro.zram.periodic_wb_delay_hours=24
+
+# Need adb on bringup
+ro.secure=0
+ro.adb.secure=0
+persist.sys.usb.config=adb
