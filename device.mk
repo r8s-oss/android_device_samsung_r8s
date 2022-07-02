@@ -45,6 +45,9 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-service \
     libbt-vendor:64
 
+# Boot animation
+TARGET_BOOTANIMATION_HALF_RES := true
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6-service_64.exynos990 \
