@@ -67,6 +67,7 @@ TARGET_SOC := exynos990
 
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/configs/init/fstab.exynos990
 
 # Root
 BOARD_ROOT_EXTRA_FOLDERS := efs
