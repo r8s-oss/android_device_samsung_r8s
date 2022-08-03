@@ -27,7 +27,12 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/init/init.recovery.exynos990.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.exynos990.rc
+    $(DEVICE_PATH)/configs/init/fstab.exynos990:$(TARGET_COPY_OUT_RAMDISK)/fstab.exynos990 \
+    $(DEVICE_PATH)/configs/init/fstab.exynos990:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.exynos990 \
+    $(DEVICE_PATH)/configs/init/init.exynos990.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.exynos990.rc \
+    $(DEVICE_PATH)/configs/init/init.exynos990.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.exynos990.usb.rc \
+    $(DEVICE_PATH)/configs/init/init.recovery.exynos990.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.exynos990.rc \
+    $(DEVICE_PATH)/configs/init/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
