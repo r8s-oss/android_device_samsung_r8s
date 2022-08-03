@@ -70,6 +70,9 @@ BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := universal990
 TARGET_SOC := exynos990
 
+# Props
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/configs/init/fstab.exynos990
