@@ -50,6 +50,9 @@ BOARD_MKBOOTIMG_ARGS := --dtb_offset 0x00000000 --header_version 2 --kernel_offs
 TARGET_KERNEL_CONFIG := exynos9830-r8slte_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/r8s
 
+# Keymaster
+TARGET_KEYMASTER_VARIANT := samsung
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
