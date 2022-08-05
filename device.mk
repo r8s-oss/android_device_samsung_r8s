@@ -13,6 +13,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 ## Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Get non-open-source specific aspects
+$(call inherit-product, vendor/samsung/r8s/r8s-vendor.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.effect@5.0-impl:32 \
