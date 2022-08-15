@@ -404,6 +404,7 @@ vendor/etc/plmn_se13.bin
 -vendor/lib/libsecril-client.so;MODULE=libsecril-client.exynos990
 -vendor/lib64/libmdf.so
 -vendor/lib64/libril_sem.so
+-vendor/lib64/libsec-ril.so
 -vendor/lib64/libsec_semRil.so
 -vendor/lib64/libsecnativefeature.so
 -vendor/lib64/libsecure_storage.so
