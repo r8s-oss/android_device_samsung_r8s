@@ -93,6 +93,7 @@ vendor/firmware/volumemonitor.bin
 -vendor/lib/lib_SoundAlive_SRC384_ver320.so
 -vendor/lib/lib_SoundAlive_play_plus_ver400.so
 -vendor/lib/lib_soundaliveresampler.so
+-vendor/lib/lib_SoundBooster_ver1050.so
 -vendor/lib/libaboxpcmdump.so
 -vendor/lib/libalsautils_sec.so
 -vendor/lib/libaudioproxy.so
@@ -113,7 +114,9 @@ vendor/firmware/volumemonitor.bin
 -vendor/lib64/lib_SoundAlive_3DPosition_ver202.so
 -vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so
 -vendor/lib64/lib_SoundAlive_play_plus_ver400.so
+-vendor/lib64/lib_SoundBooster_ver1050.so
 -vendor/lib64/libfloatingfeature.so
+-vendor/lib64/libprofileparamstorage.so
 -vendor/lib64/libsecaudiocoreutils.so
 -vendor/lib64/libsecaudioinfo.so
 -vendor/lib64/soundfx/libaudioeffectoffload.so
@@ -381,6 +384,7 @@ vendor/etc/nfc/sec_s3nrn4v_swreg.bin
 vendor/firmware/nfc/sec_s3nrn4v_firmware.bin
 
 # OMX
+-vendor/lib/libepicoperator.so
 -vendor/lib/libExynosOMX_Core.so
 -vendor/lib/libExynosOMX_Resourcemanager.so
 -vendor/lib/libstagefright_omx_vendor.so
@@ -397,6 +401,7 @@ vendor/firmware/nfc/sec_s3nrn4v_firmware.bin
 -vendor/lib/omx/libOMX.Exynos.VP9.Decoder.so
 -vendor/lib/omx/libOMX.Exynos.VP9.Encoder.so
 -vendor/lib/omx/libOMX.Exynos.WMV.Decoder.so
+-vendor/lib64/libepicoperator.so
 -vendor/lib64/libExynosOMX_Core.so
 -vendor/lib64/libExynosOMX_Resourcemanager.so
 -vendor/lib64/omx/libOMX.Exynos.AVC.Decoder.so
