@@ -1239,3 +1239,6 @@ service tzts_service /vendor/bin/tzts_daemon
     user system
     group system
     disabled
+
+on property:sys.boot_completed=1
+    restart vendor.sensors-hal-2-1-multihal
