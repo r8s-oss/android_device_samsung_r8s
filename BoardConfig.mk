@@ -62,7 +62,7 @@ BOARD_MKBOOTIMG_ARGS := --dtb_offset 0x00000000 --header_version 2 --kernel_offs
 
 # Kernel Source
 TARGET_KERNEL_CONFIG := exynos9830-r8slte_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/r8s
+TARGET_KERNEL_SOURCE := kernel/samsung/exynos990
 
 # Keymaster
 TARGET_KEYMASTER_VARIANT := samsung
@@ -109,6 +109,9 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # Root
 BOARD_ROOT_EXTRA_FOLDERS := efs
+
+# Security
+VENDOR_SECURITY_PATCH := 2022-08-01
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
