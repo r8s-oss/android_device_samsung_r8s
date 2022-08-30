@@ -26,8 +26,8 @@ using ::android::OK;
 const int kMaxCameraIdLen = 16;
 
 SamsungCameraProvider::SamsungCameraProvider() : LegacyCameraProviderImpl_2_5() {
-    // ID=52 is telephoto
-    mExtraIDs.push_back(52);
+    // ID=50 is telephoto
+    mExtraIDs.push_back(50);
 
     if (!mInitFailed) {
         for (int i : mExtraIDs) {
