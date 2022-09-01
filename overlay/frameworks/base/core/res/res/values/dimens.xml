@@ -19,7 +19,7 @@
 -->
 <resources>
     <!-- Radius of the software rounded corners. -->
-    <dimen name="rounded_corner_radius">100px</dimen>
+    <dimen name="rounded_corner_radius">70px</dimen>
 
     <!-- Adjustment for software rounded corners since corners aren't perfectly round. -->
     <dimen name="rounded_corner_radius_adjustment">5px</dimen>
@@ -27,5 +27,5 @@
     <!-- Height of the status bar.
          Do not read this dimen directly. Use {@link SystemBarUtils#getStatusBarHeight} instead.
          -->
-    <dimen name="status_bar_height">4.639984mm</dimen>
+    <dimen name="status_bar_height">5.25mm</dimen>
 </resources>

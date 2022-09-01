@@ -23,5 +23,5 @@
          -->
 
     <!-- Height of the status bar in landscape -->
-    <dimen name="status_bar_height">28.0dp</dimen>
+    <dimen name="status_bar_height">22.0dp</dimen>
 </resources>

@@ -77,7 +77,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
     android.hardware.graphics.mapper@2.0-impl-2.1
 
-TARGET_SCREEN_DENSITY := 480
+TARGET_SCREEN_DENSITY := 410
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
