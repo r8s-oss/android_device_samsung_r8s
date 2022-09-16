@@ -78,6 +78,9 @@ function blob_fixup() {
         vendor/etc/init/init.vendor.rilcommon.rc)
             sed -i '16,18d' "${2}"
             ;;
+        vendor/lib*/libexynosdisplay.so|vendor/lib*/hw/hwcomposer.exynos990.so|vendor/lib*/sensors.*.so)
+            "${PATCHELF}" --replace-needed libutils.so libutils-v32.so "${2}"
+            ;;
     esac
 }
 
