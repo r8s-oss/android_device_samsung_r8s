@@ -141,6 +141,7 @@ PRODUCT_COPY_FILES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service.samsung \
+    android.hardware.keymaster@4.1.vendor \
     libkeymaster4_1support.vendor:64
 
 # Lights
@@ -286,6 +287,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    android.frameworks.schedulerservice@1.0.vendor:64 \
     android.hardware.contexthub@1.0.vendor:64 \
     android.hardware.sensors@2.1-service.samsung-multihal
 
