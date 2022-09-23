@@ -536,6 +536,7 @@ vendor/etc/sensors/hals.conf
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 -vendor/lib/libwvhidl.so
+-vendor/lib/liboemcrypto.so
 
 # Wi-Fi
 -vendor/bin/hw/macloader
