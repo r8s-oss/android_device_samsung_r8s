@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=x1slte
+export DEVICE=r8s
 export DEVICE_COMMON=exynos990-common
 export VENDOR=samsung
 

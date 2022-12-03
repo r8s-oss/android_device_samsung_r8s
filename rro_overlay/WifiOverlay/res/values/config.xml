@@ -45,5 +45,5 @@
     <bool name="config_wifi_p2p_mac_randomization_supported">true</bool>
 
     <!-- Default access point SSID used for tethering -->
-    <string name="wifi_tether_configure_ssid_default" translatable="false">Samsung Galaxy S20</string>
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Samsung Galaxy S20 FE</string>
 </resources>
