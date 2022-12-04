@@ -3,7 +3,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from x1slte device
-$(call inherit-product, device/samsung/x1slte/device.mk)
+$(call inherit-product, device/samsung/r8s/device.mk)
 
 ## Boot Animation
 TARGET_SCREEN_HEIGHT := 2400
